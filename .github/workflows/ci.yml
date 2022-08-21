@@ -27,7 +27,7 @@ jobs:
           QUAY_USERNAME: ${{ secrets.QUAY_USER_NAME }}
         run: |
           export VERSION=$(cat service.yaml)
-          export CF_IMAGE=quay.io/$QUAY_USER_NAME/${{ github.event.repository.name }}:$VERSION
+          export CF_IMAGE=quay.io/$QUAY_USERNAME/${{ github.event.repository.name }}:$VERSION
           echo "CF_IMAGE=$CF_IMAGE" >> $GITHUB_ENV
           docker build . --file Dockerfile --build-arg COLOR=$VERSION --tag $CF_IMAGE && docker push $CF_IMAGE
       
