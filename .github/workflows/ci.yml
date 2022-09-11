@@ -61,7 +61,10 @@ jobs:
           CF_JIRA_MESSAGE: "${{ github.event.pull_request.head.ref }}"
           CF_GIT_BRANCH: "${{ github.event.pull_request.head.ref }}"
 
-        uses: codefresh-io/codefresh-report-image@latest
+#         uses: codefresh-io/codefresh-report-image@latest
+
+        uses: eti-codefresh/codefresh-report-image@test9
+
       #- name: Report image
        # with:
         #  CF_IMAGE: ${{ env.CF_IMAGE }}
