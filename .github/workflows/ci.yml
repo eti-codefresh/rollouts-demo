@@ -46,7 +46,7 @@ jobs:
           CF_CONTAINER_REGISTRY_INTEGRATION: 'quay'
 
           # Name of Jira integration
-          CF_JIRA_INTEGRATION: 'etitest3'
+          CF_JIRA_INTEGRATION: 'test-123456789'
 
           # Image path to enrich
           CF_IMAGE: ${{env.CF_IMAGE}}
