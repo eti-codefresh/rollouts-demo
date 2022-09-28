@@ -37,7 +37,7 @@ jobs:
 #           CF_HOST: 'https://mr-62c6d2bf754487f285b9b61b-7f614b0.cf-cd.com'
 #           CF_RUNTIME_NAME: 'staging-eks-28-09-2022'
 #           CF_PLATFORM_URL: 'http://eti-platform.ngrok.io'
-          CF_RUNTIME_NAME: 'local-eks-18-09-2022'
+          CF_RUNTIME_NAME: 'staging-eks-28-09-2022'
           CF_PLATFORM_URL: 'https://app-staging.codefresh.io'
 
           # Codefresh API key !! Committing a plain text token is a security risk. We highly recommend using an encrypted secrets. !!
