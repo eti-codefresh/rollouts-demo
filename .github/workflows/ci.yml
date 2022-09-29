@@ -22,14 +22,14 @@ jobs:
           registry: quay.io
           username: ${{ secrets.QUAY_USER_NAME }}
           password: ${{ secrets.QUAY_PASSWORD }}
-#       - name: Build & push the Docker image
-#         env:
-#           QUAY_USERNAME: ${{ secrets.QUAY_USER_NAME }}
-#         run: |
-#           export VERSION=$(cat service.yaml)
-#           export CF_IMAGE=quay.io/$QUAY_USERNAME/${{ github.event.repository.name }}:$VERSION
-#           echo "CF_IMAGE=$CF_IMAGE" >> $GITHUB_ENV
-#           docker build . --file Dockerfile --build-arg COLOR=$VERSION --tag $CF_IMAGE && docker push $CF_IMAGE
+      - name: Build & push the Docker image
+        env:
+          QUAY_USERNAME: ${{ secrets.QUAY_USER_NAME }}
+        run: |
+          export VERSION=$(cat service.yaml)
+          export CF_IMAGE=quay.io/$QUAY_USERNAME/${{ github.event.repository.name }}:$VERSION
+          echo "CF_IMAGE=$CF_IMAGE" >> $GITHUB_ENV
+          docker build . --file Dockerfile --build-arg COLOR=$VERSION --tag $CF_IMAGE && docker push $CF_IMAGE
       
       - name: report image
         with:
@@ -50,10 +50,10 @@ jobs:
           # Name of Jira integration
           CF_JIRA_INTEGRATION: 'eti-jira'
 
-#           # Image path to enrich
-#           CF_IMAGE: ${{env.CF_IMAGE}}
           # Image path to enrich
-          CF_IMAGE: gcr.io/heptio-images/ks-guestbook-demo:0.1
+          CF_IMAGE: ${{env.CF_IMAGE}}
+#           # Image path to enrich
+#           CF_IMAGE: gcr.io/heptio-images/ks-guestbook-demo:0.1
           
           # GitHub Access token !! Committing a plain text token is a security risk. We highly recommend using an encrypted secrets. !!
           # Documentation - https://docs.github.com/en/actions/security-guides/encrypted-secrets
