@@ -72,7 +72,7 @@ jobs:
 
 #         uses: codefresh-io/codefresh-report-image@latest
 
-        uses: eti-codefresh/codefresh-report-image@git-provider
+        uses: eti-codefresh/codefresh-report-image@git-provider-2
 
       #- name: Report image
        # with:
