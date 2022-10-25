@@ -36,7 +36,7 @@ jobs:
           # Name of runtime to implement the enrichment
 #           CF_HOST: 'https://mr-62c6d2bf754487f285b9b61b-7f614b0.cf-cd.com'
 #           CF_RUNTIME_NAME: 'staging-eks-28-09-2022'
-          CF_PLATFORM_URL: 'https://g.codefresh.io'
+#           CF_PLATFORM_URL: 'https://g.codefresh.io'
           CF_RUNTIME_NAME: 'prod-11-10-2022'
 #           CF_PLATFORM_URL: 'https://app-staging.codefresh.io'
 
@@ -47,8 +47,10 @@ jobs:
           # Name of Container registry integration
           CF_CONTAINER_REGISTRY_INTEGRATION: 'quay'
 
-          # Name of Jira integration
-          CF_JIRA_INTEGRATION: 'jira'
+#           # Name of Jira integration
+#           CF_JIRA_INTEGRATION: 'jira'
+
+          CF_ISSUE_TRACKING_INTEGRATION: 'jira'
 
           # Image path to enrich
           CF_IMAGE: ${{env.CF_IMAGE}}
