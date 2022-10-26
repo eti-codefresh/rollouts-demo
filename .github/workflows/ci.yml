@@ -50,7 +50,7 @@ jobs:
 #           # Name of Jira integration
 #           CF_JIRA_INTEGRATION: 'jira'
 
-#           CF_ISSUE_TRACKING_INTEGRATION: 'jira'
+          CF_ISSUE_TRACKING_INTEGRATION: 'jira'
 
           # Image path to enrich
           CF_IMAGE: ${{env.CF_IMAGE}}
@@ -70,9 +70,9 @@ jobs:
 #           CF_GIT_PROVIDER: "github"
           CF_GIT_BRANCH: "${{ github.event.pull_request.head.ref }}"
 
-        uses: codefresh-io/codefresh-report-image@latest
+#         uses: codefresh-io/codefresh-report-image@latest
 
-#         uses: eti-codefresh/codefresh-report-image@git-provider-2
+        uses: eti-codefresh/codefresh-report-image@git-provider-2
 
       #- name: Report image
        # with:
