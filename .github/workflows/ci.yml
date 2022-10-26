@@ -35,7 +35,8 @@ jobs:
         with:
           # Name of runtime to implement the enrichment
 #           CF_HOST: 'https://eti-demo.pipeline-team.cf-cd.com'
-          CF_RUNTIME_NAME: 'prod-eks-26-10-2022'
+#           CF_RUNTIME_NAME: 'prod-eks-26-10-2022'
+          CF_RUNTIME_NAME: 'codefresh-hosted'
 #           CF_PLATFORM_URL: 'https://g.codefresh.io'
 #           CF_RUNTIME_NAME: 'sec-eks-25-10-2022'
 #           CF_PLATFORM_URL: 'https://sec.codefresh.io'
