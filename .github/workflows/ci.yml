@@ -47,8 +47,8 @@ jobs:
           # Name of Container registry integration
           CF_CONTAINER_REGISTRY_INTEGRATION: 'quay'
 
-#           # Name of Jira integration
-#           CF_JIRA_INTEGRATION: 'jira'
+          # Name of Jira integration
+          CF_JIRA_INTEGRATION: 'jira'
 
           CF_ISSUE_TRACKING_INTEGRATION: 'jira'
 
