@@ -46,10 +46,10 @@ jobs:
           CF_API_KEY: ${{secrets.CF_API_KEY}}
 
           # Name of Container registry integration
-          CF_CONTAINER_REGISTRY_INTEGRATION: 'quay-demo'
+          CF_CONTAINER_REGISTRY_INTEGRATION: 'quay-demo2'
 
           # Name of Jira integration
-          CF_JIRA_INTEGRATION: 'jira-demo'
+          CF_JIRA_INTEGRATION: 'jira-demo2'
 
 #           CF_ISSUE_TRACKING_INTEGRATION: 'jira'
 
