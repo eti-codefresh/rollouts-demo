@@ -48,10 +48,10 @@ jobs:
           # Name of Container registry integration
           CF_CONTAINER_REGISTRY_INTEGRATION: 'quay-test2'
 
-          # Name of Jira integration
-          CF_JIRA_INTEGRATION: 'jira-demo2'
+#           # Name of Jira integration
+#           CF_JIRA_INTEGRATION: 'jira-demo2'
 
-#           CF_ISSUE_TRACKING_INTEGRATION: 'jira'
+          CF_ISSUE_TRACKING_INTEGRATION: 'jira'
 
           # Image path to enrich
           CF_IMAGE: ${{env.CF_IMAGE}}
