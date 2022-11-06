@@ -35,8 +35,8 @@ jobs:
         with:
           # Name of runtime to implement the enrichment
 #           CF_HOST: 'https://eti-demo.pipeline-team.cf-cd.com'
-          CF_RUNTIME_NAME: 'prod-02-11-2022'
-#           CF_RUNTIME_NAME: 'codefresh-hosted'
+#           CF_RUNTIME_NAME: 'prod-02-11-2022'
+          CF_RUNTIME_NAME: 'codefresh-hosted'
 #           CF_PLATFORM_URL: 'https://g.codefresh.io'
 #           CF_RUNTIME_NAME: 'sec-eks-02-11-2022'
 #           CF_PLATFORM_URL: 'https://sec.codefresh.io'
@@ -47,7 +47,7 @@ jobs:
           CF_API_KEY: ${{secrets.CF_API_KEY}}
           
           # Name of Container registry integration
-          CF_CONTAINER_REGISTRY_INTEGRATION: 'quay-test2'
+          CF_CONTAINER_REGISTRY_INTEGRATION: 'quay'
 
 #           # Name of Jira integration
 #           CF_JIRA_INTEGRATION: 'jira-demo2'
