@@ -36,14 +36,14 @@ jobs:
           # Name of runtime to implement the enrichment
 #           CF_HOST: 'https://eti-demo.pipeline-team.cf-cd.com'
 #           CF_RUNTIME_NAME: 'prod-02-11-2022'
-          CF_RUNTIME_NAME: 'codefresh-hosted'
+          CF_RUNTIME_NAME: 'ingressless-test-1'
 #           CF_PLATFORM_URL: 'https://g.codefresh.io'
 #           CF_RUNTIME_NAME: 'sec-eks-02-11-2022'
 #           CF_PLATFORM_URL: 'https://sec.codefresh.io'
 
           # Codefresh API key !! Committing a plain text token is a security risk. We highly recommend using an encrypted secrets. !!
           # Documentation - https://docs.github.com/en/actions/security-guides/encrypted-secrets
-#           CF_API_KEY: ${{secrets.CF_API_KEY_SEC}}
+#           CF_API_KEY: ${{secrets.CF_API_KEY}}
           CF_API_KEY: ${{secrets.CF_API_KEY}}
           
           # Name of Container registry integration
