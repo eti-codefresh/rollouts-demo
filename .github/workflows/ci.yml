@@ -37,7 +37,7 @@ jobs:
 #           CF_HOST: 'https://eti-demo.pipeline-team.cf-cd.com'
 #           CF_RUNTIME_NAME: 'prod-02-11-2022'
 #           CF_RUNTIME_NAME: 'ingressless-test-1'
-          CF_RUNTIME_NAME: 'test-02-03-2023'
+          CF_RUNTIME_NAME: 'eti-helm'
 #           CF_RUNTIME_NAME: 'codefresh-hosted'
 #           CF_PLATFORM_URL: 'https://g.codefresh.io'
 #           CF_RUNTIME_NAME: 'sec-eks-02-11-2022'
@@ -49,12 +49,12 @@ jobs:
           CF_API_KEY: ${{secrets.CF_API_KEY}}
           
           # Name of Container registry integration
-          CF_CONTAINER_REGISTRY_INTEGRATION: 'quay-eti'
+          CF_CONTAINER_REGISTRY_INTEGRATION: 'quay-2'
 
 #           # Name of Jira integration
 #           CF_JIRA_INTEGRATION: 'jira-demo2'
 
-          CF_ISSUE_TRACKING_INTEGRATION: 'jira-eti'
+          CF_ISSUE_TRACKING_INTEGRATION: 'jira-2'
 
           # Image path to enrich
           CF_IMAGE: ${{env.CF_IMAGE}}
