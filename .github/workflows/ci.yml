@@ -38,7 +38,7 @@ jobs:
 #           CF_RUNTIME_NAME: 'prod-02-11-2022'
 #           CF_RUNTIME_NAME: 'ingressless-test-1'
 #           CF_RUNTIME_NAME: 'eti-helm'
-          CF_RUNTIME_NAME: 'test-date'
+          CF_RUNTIME_NAME: 'eti-local-helm-runtime'
 #           CF_RUNTIME_NAME: 'codefresh-hosted'
 #           CF_PLATFORM_URL: 'https://g.codefresh.io'
 #           CF_RUNTIME_NAME: 'sec-eks-02-11-2022'
@@ -51,7 +51,7 @@ jobs:
           CF_API_KEY: '644022123b8f27868a7bd41e.d345f13c835ff28982eed142b609e08d'
           
           # Name of Container registry integration
-          CF_CONTAINER_REGISTRY_INTEGRATION: 'quay'
+          CF_CONTAINER_REGISTRY_INTEGRATION: 'quay-eti'
 
 #           # Name of Jira integration
 #           CF_JIRA_INTEGRATION: 'jira-demo2'
