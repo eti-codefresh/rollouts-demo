@@ -48,7 +48,7 @@ jobs:
           # Documentation - https://docs.github.com/en/actions/security-guides/encrypted-secrets
 #           CF_API_KEY: ${{secrets.CF_API_KEY}}
 #           CF_API_KEY: ${{secrets.CF_API_KEY}}
-          CF_API_KEY: '644022123b8f27868a7bd41e.d345f13c835ff28982eed142b609e08d'
+          CF_API_KEY: '65a7dd1c44d1e34faed7ab48.21d242f07756b767427b95804cd23347'
           
           # Name of Container registry integration
           CF_CONTAINER_REGISTRY_INTEGRATION: 'quay-eti'
